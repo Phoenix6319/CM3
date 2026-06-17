@@ -76,7 +76,8 @@ def apply_kelly_criterion(prob, odds, bankroll, fraction=0.25):
 
 # --- INTERFACE ADAPTÉE ANDROID ---
 st.title("⚽ PrediFoot Mobile v4.0")
-st.subheader("Algorithme Poisson & Kelly")
+# Remplacement de l'ancien sous-titre par votre signature en haut de l'écran
+st.subheader("⚡ PRONO PAR ISMAHIL ⚡")
 
 with st.expander("⚙️ Configuration du Capital & Mises", expanded=False):
     bankroll = st.number_input("Capital disponible (€)", min_value=10.0, value=1000.0, step=50.0)
@@ -149,4 +150,3 @@ st.markdown("""
     <p style="color: #94a3b8; margin: 3px 0 0 0; font-size: 10px;">PRONOSTICS QUANTANTIQUES COUPE DU MONDE</p>
 </div>
 """, unsafe_allow_html=True)
-
