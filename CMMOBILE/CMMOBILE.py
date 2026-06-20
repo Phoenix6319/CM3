@@ -203,4 +203,6 @@ if home_team != "-- Choisir une équipe --" and away_team != "-- Choisir une éq
         else:
             st.markdown(f'<div style="background-color: #7f1d1d; padding: 10px; border-radius: 5px; margin-top: 5px; font-weight: bold; text-align: center; color: white;">❌ PAS DE VALUE (Indice: {val:.2f})</div>', unsafe_allow_html=True)
 else:
-    st.markdown("<p style='text-align: cent
+    st.markdown("<p style='text-align: center; color: #a0aec0; margin-top: 20px;'>💡 Choisissez deux équipes pour lancer l'analyse prédictive.</p>", unsafe_allow_html=True)
+
+   
