@@ -2,3 +2,6 @@ streamlit
 pandas
 numpy
 scipy
+beautifulsoup4
+requests
+streamlit-autorefresh
