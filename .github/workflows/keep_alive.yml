@@ -1,0 +1,16 @@
+name: Keep Predifoot Alive
+
+on:
+  schedule:
+    # S'exécute toutes les 6 heures (à 00h, 06h, 12h, 18h UTC)
+    - cron: '0 */6 * * *'
+  # Permet également de lancer le ping manuellement depuis l'onglet Actions
+  workflow_dispatch:
+
+jobs:
+  ping-app:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send ping request to Streamlit
+        run: |
+          curl -sI https://streamlit.app | head -n 1
